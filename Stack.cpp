@@ -18,7 +18,26 @@ void init() {
 
 
 // Mencari tau apakah stack 1 atau stack 2 masih kosong apa enggak
-
+int empty(int nomorstack) {
+    switch(nomorstack) {
+        case 1:
+            if(top1 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+            break;
+        case 2:
+            if(top2 == MAX + 1) {
+                return true;
+            } else {
+                return false;
+            }
+            break;
+        default: printf("Nomor stack salah");
+            break;
+    }
+}
 
 // Buat hapus semua data stack di dalam array
 
