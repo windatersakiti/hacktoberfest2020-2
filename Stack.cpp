@@ -133,6 +133,7 @@ int main() {
     std::cout << "Hasil pop stack kedua: " << pop(2) << "\n";
     // cetak array termasuk kedua stack
     display();
+    system('cls');
 
     // exit with no error
     // http://en.wikipedia.org/wiki/Error_code
